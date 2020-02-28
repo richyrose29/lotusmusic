@@ -1,0 +1,275 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<head> 
+<title>Lotus Music</title>  
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        
+</head>
+
+    <body>
+                  
+<!--P Text and Border are for the "Lotus" title on the first page.  -->
+<!-- This is also my navigation bar section-->
+        
+      <div class="pmg1">        
+          
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#About-section">About</a>
+        <a href="#Events-section">Events</a>
+        <a href="#Tunes-section">Tunes</a>
+        <a href="#Contact-section">Contact</a>
+      </div>
+      
+      
+      <span class="enter" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Enter</span>
+
+
+          <div class ="ptext"> 
+              <div class ="container">
+
+                <span class ="text1">WELCOME TO</span>
+                <span class = "text2" id="About-section">LOTUS</span>
+
+                <div class="arrow">
+
+</div> 
+
+<div class="pointer scroll-down" hidden>
+<i class="fas fa-sort-down"></i>
+</div>
+
+              </div>
+                 
+      </div>
+     
+
+</div>
+
+
+
+<!--This is my About section-->
+<!--id is used for the nav to scroll to different sections--> 
+
+<section class="section section-light" id="section1"> 
+
+    <h1 class="intro"> WELCOME</h1>
+    <p> From the streets of Liverpool, Lotus have been supplying beats for every occasion..</p> 
+    <p> With a diverse and eclectic sound they bring your listening experince to a new level. </p>
+     
+               
+              
+</section>
+
+<!--Events section-->
+
+<div class="pmg2" id="Events-section"> 
+        <div class ="ptext2"> 
+            <span class ="border trans">              
+    
+                Events
+    
+            </span>
+          </div>
+    </div>
+
+
+    <section class="section-dark2"> 
+
+            <h1 class="come-get-some">COME GET SOME</h1>
+            
+            <div class="events">
+
+
+                  <p>Liverpool  Lago 19.02.2019 </p>
+                  <p>Liverpool  Crazy Pedros 26.02.2019</p>
+                  <p>Liverpool  Brooklyn Mixer 08.03.2019</p>
+                  
+              
+        
+              </div>
+        </section>
+
+
+        <!--Tunes Section-->
+
+        <div class="pmg2" > 
+                <div class ="ptext2" id="Tunes-section"> 
+                    <span class ="border trans">              
+            
+                        Tunes
+            
+                    </span>
+                  </div>
+            </div>
+        
+        
+            <section class="section-dark2"> 
+        
+                    <h1 class="do-you">DO YOU HEAR THAT?!</h1>
+
+                
+<!--This is the start of my audio player-->
+
+                    <script
+                    src="script.js"
+                    type="text/javascript" defer> 
+                  </script>
+              
+                  <audio
+                        id="myAudio" 
+                        src="drake.mp3"
+                        preload="auto">
+                  </audio>
+
+               
+    <!--This is for my image and audio buttons/volume slider/Spinning disk-->
+
+                  <div class ="drake">
+                      <img  class="drake-image" src="images/drake.jpg" alt="drake">
+                  </div>
+
+                  <p class="title">Drake - One Dance</p>
+              
+                  <button class="audio-play" type="button" onclick="togglePlay()"><i class="fas fa-play"></i></button>   
+                  <button class="audio-pause" type="button" onclick="togglePause()"><i class="fas fa-pause"></i></button>  
+                  <button  class="audio-stop" type="button" onclick="toggleStop()"><i class="fas fa-stop"></i></button>
+                  
+                   <div class="slidecontainer">
+                      <i class="fas fa-volume-down"></i> <input type="range" min="1" max="100"
+                       value="100" class="slider" id="volumeSlider"> 
+                       <i class="fas fa-volume-up"></i>
+                    <p>Volume: <span id="demo"></span></p>                    
+                  </div>
+                  
+                  
+                  
+                   <i class="fas fa-compact-disc" id=disk> </i> 
+                                     
+                                      
+                </section>
+
+              <!--Contact Section--> 
+
+               <div class="pmg2" >
+                    <div class ="ptext2"> 
+                        <span class ="border trans">              
+                
+                            Contact
+                
+                        </span>
+                      </div>
+                </div>
+
+                       
+            
+                <section class="section-dark2" id="Contact-section">
+            
+                        <h1 class="get">GET IN TOUCH</h1>
+
+                    </section> 
+
+                    <div class="form-container">
+                        
+                       <div class="contact-form">
+
+                       
+                        
+                       <div class="txtb">
+
+                        <label>Full Name:</label>
+                        <input type="text" name="name" value="" placeholder="Enter Your Name">
+
+                       </div>
+                    
+                         
+                       <div class="txtb">
+
+                            <label>Email:</label>
+                            <input type="email" name="email" value="" placeholder="Enter Your Email">
+    
+                           </div>
+
+                          
+                       <div class="txtb">
+
+                                <label>Message:</label>
+                                <textarea input type ="msg" name="msg" id="msg"> </textarea>
+        
+                               </div>
+
+                        <a class="btn" input type ="submit" name="submit" id="submit">Send</a>
+                    <h5 class="text-center text-success"> <?=$result;?> </h5> 
+                    
+                    </div>
+
+                </div> 
+
+                <!--Footer section-->
+
+                    <div class ="footer-main-div">
+
+                        <div class="footer-social-icons">
+                    <ul>
+                        <li> <a href="#" target "blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li> <a href="#" target "blank"><i class="fab fa-twitter"></i></a></li>
+                        <li> <a href="http://hotsta.net/wordandlotus" target="blank"><i class="fab fa-instagram"></i></a></li>
+                        <li> <a href="#" target "blank"><i class="fab fa-soundcloud"></i></a></li>
+    
+    
+    
+                            </ul>
+                        </div>
+                    </div>
+      
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<script src="app.js"></script>
+
+
+
+
+        
+       
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
